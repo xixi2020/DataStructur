@@ -1,4 +1,4 @@
-﻿package JavaSe.Collection;
+﻿package JavaSe.collection;
 import java.util.Map;
 import java.util.Map.Entry;
 import java.util.Set;
@@ -6,7 +6,7 @@ import java.util.HashMap;
 import java.util.Iterator;
 //Map集合的几个常见用法和遍历
 //key值不可重复底层会调用equals方法来比较key值，自定义类型要重写HashCode和equals方法
-public class hashMap01 {
+public class HashMap01 {
 	//创建集合
 	public static void main(String[] args){
 		Map<Integer,String> map=new HashMap<>();

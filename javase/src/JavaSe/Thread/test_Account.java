@@ -1,4 +1,4 @@
-﻿package JavaSe.Thread;
+﻿package JavaSe.thread;
 
 //测试 testmain方法必须为public首先Java规定bai了main()方法必须是公共的，
 //以便于外du部程序对主方法的访问，zhi因为程序都是从daomain()方法起始的，并且main()方法也必须是静态的，很大程度上这是为了安全性的考虑

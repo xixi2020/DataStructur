@@ -1,4 +1,4 @@
-﻿package JavaSe.Thread;
+﻿package JavaSe.thread;
 //这里模拟两个账户同时取款过程中的建立账户
 public class Account {
     private String Ac;

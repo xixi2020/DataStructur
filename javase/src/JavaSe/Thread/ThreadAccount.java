@@ -1,4 +1,4 @@
-﻿package JavaSe.Thread;
+﻿package JavaSe.thread;
 
 public class ThreadAccount implements Runnable{
 	//两个线程共享一个账户

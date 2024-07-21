@@ -1,4 +1,4 @@
-﻿package JavaSe.Thread;
+﻿package JavaSe.thread;
 //这个程序演示守护线程（后台线程）
 //由两个线程组成，一个主线程，一个守护进程
 //即使是死循环也会等到主线程结束，守护线程才结束

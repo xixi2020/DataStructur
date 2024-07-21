@@ -1,6 +1,6 @@
 ﻿package JavaSe.File;
 import java.io.*;
-public class filecopy {
+public class Filecopy {
      public static void main(String[] args) {
     	 //File中找出当前文件下所有目录名
     	 File file=new File("D:\\java");

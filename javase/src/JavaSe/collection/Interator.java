@@ -1,8 +1,8 @@
-﻿package JavaSe.Collection;
+﻿package JavaSe.collection;
 import java.util.ArrayList;
 import java.util.Collection;
 import java.util.Iterator;
-public class interator {
+public class Interator {
 	public static void main(String[] args) {
 	Collection a=new ArrayList();
 	a.add("123");

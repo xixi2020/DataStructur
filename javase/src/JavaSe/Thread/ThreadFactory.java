@@ -1,4 +1,4 @@
-package JavaSe.Thread;
+package JavaSe.thread;
 
 import java.util.ArrayList;
 import java.util.List;
