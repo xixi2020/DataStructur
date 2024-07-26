@@ -1,4 +1,4 @@
-﻿package JavaSe.JavaWorryTest;
+package JavaSe.JavaWorryTest;
 //在这里研究一下形参的调用
 public class canshu {
     public int tryChange(int i) {

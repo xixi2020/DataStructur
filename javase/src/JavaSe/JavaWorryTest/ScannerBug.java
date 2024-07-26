@@ -1,4 +1,4 @@
-﻿package JavaSe.JavaWorryTest;
+package JavaSe.JavaWorryTest;
 
 import java.util.Scanner;
 

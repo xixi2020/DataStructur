@@ -1,4 +1,4 @@
-﻿package JavaSe.thread;
+package JavaSe.thread;
 
 /**
  * 这里来解决死锁问题
