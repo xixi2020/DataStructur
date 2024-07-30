@@ -4,7 +4,7 @@ package JavaSe.thread;
  *
  * 这里模拟一个死锁
  */
-public class deadLock {
+public class DeadLock {
 
     //创建两个互斥的资源
     static Object resource01 = new Object() ;

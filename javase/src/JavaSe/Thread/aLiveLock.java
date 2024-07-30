@@ -3,7 +3,7 @@ package JavaSe.thread;
 /**
  * 这里来解决死锁问题
  */
-public class aLiveLock {
+public class ALiveLock {
 
     //创建两个互斥的资源
     static Object resource01 = new Object() ;
