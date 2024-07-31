@@ -20,10 +20,12 @@ public class outputAlternately{
         new Thread(() -> awaitSignal.print("b", condition02, condition03)).start();
         new Thread(() -> awaitSignal.print("c", condition03, condition01)).start();
 
+        //Condition的await()方法让线程等待，使用signal（）方法唤醒线程
         try {
 
             Thread.sleep(1000);
             awaitSignal.lock();
+            //开始唤醒第一个线程，由第一个线程唤醒下一个
             condition01.signal();
         } catch (InterruptedException e) {
             throw new RuntimeException(e);
