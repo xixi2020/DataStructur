@@ -38,5 +38,23 @@ class SynLazySingleton{
     }
 }
 
-
+/**
+ * 优化：懒汉式内部类单例模式
+ * 静态内部类单例模式中实例由内部类创建，
+ * 由于JVM在加载外部类的过程中是不会加载静态内部类的，只有内部类的属性方法被调用时才会被加载并初始化其静态属性。
+ * 静态属性由于被static修饰，保证只被实例化一次，并且严格保证实例化顺序。
+ */
+class InnerLazyStaticSingleton{
+    private volatile static InnerLazyStaticSingleton singleton;
+    private InnerLazyStaticSingleton(){}
+    //第一次加载Singleton类时不会去初始化INSTANCE，只有第一次调用getInstance
+    //虚拟机加载SingletonHolder并初始化INSTANCE，这样不仅能确保线程安全，也能保证Singleton类的唯一性。
+    public static class Singlton{
+        public static final InnerLazyStaticSingleton SINGLETON = new InnerLazyStaticSingleton();
+    }
+    //对外提供获取静态内部类的方法
+    public InnerLazyStaticSingleton getSingleton(){
+        return Singlton.SINGLETON;
+    }
+}
 
