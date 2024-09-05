@@ -7,7 +7,7 @@ import java.lang.reflect.Proxy;
 
 
 
-public class DynamicProxy{
+public class JDKDynamicProxy{
     public static void main(String[] args) {
         SellTickets porxy = new PorxyStationFactory().getPorxy();
         porxy.sell();
