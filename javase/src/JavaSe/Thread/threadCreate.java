@@ -21,12 +21,17 @@ public class ThreadCreate {
         thread01.start();
 
         //runnable
-        Thread runnble = new Thread(() -> System.out.println("runnable创建方式"));
+        Thread runnble = new Thread(() -> System.out.println("runnable创建方式1"));
         runnble.start();
         Runnable  runnable = () -> System.out.println("Runnble创建");
-        Thread thread02 = new Thread(runnable,"thread02");
+        new Thread(new Runnable() {
+            @Override
+            public void run() {
+                System.out.println("runnable创建方式2");
+            }
+        }, "thread02").start();
 
-        //Future来接收一个返回值
+        //Future来接收一(个返回值,主要是异步计算结果，需要一个futureTask来接手线程计算的结果
         FutureTask futureTask = new FutureTask<>(() -> 1);
         new Thread(futureTask, "thread03").start();
         try {
